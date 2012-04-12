@@ -1,1 +1,6 @@
-<%= @total %> USD
+<% @total.each do |row| %>
+  <% row.each do |col| %>
+    <%= " " + col %>
+  <% end %>
+  <br />
+<% end %>
